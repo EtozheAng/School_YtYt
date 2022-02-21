@@ -1,0 +1,132 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+
+.header{
+  background-image: url('../images/bg-2.svg');
+  background-repeat: no-repeat;
+  background-position: 200px 0;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 51px;
+    border-radius: 75px;
+    backdrop-filter: blur(15px);
+  }
+  &__top-item{
+    display: flex;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0 100px;
+  }
+  &__content-title{
+    max-width: 638px;
+    font-size: 46px;
+    line-height: 46px;
+    color: $default;
+    margin-bottom: 31px;
+    @extend %gilroy-400;
+    span{
+      color: $accent;
+      font-size: 55px;
+      font-weight: 500;
+    }
+    strong{
+      font-style: italic;
+      font-weight: 500;
+    }
+  }
+  &__content-text{
+    padding-top: 14px;
+    margin-bottom: 45px;
+    max-width: 365px;
+    border-top: 1px solid #dedede;
+  }
+  &__content-btn{
+    position: relative;
+    transition: all .3s;
+    @extend %btn;
+    &::after{
+      content: "";
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      right: 50px;
+      top: 33px;
+      background-image: url('../images/icon/arrow-up.svg');
+    }
+    &:hover{
+        background-color: $basic;
+      }
+  }
+  &__bottom{
+    background-color: #fff;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    margin: 0 auto;
+    background-image: url('../images/icon/arrow-bottom.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.logo{
+  margin-right: 73px;
+}
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-link{
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+    }
+  }
+  &__list-item + .menu__list-item{
+      padding-left: 40px;
+  }
+  &___list-link{
+    font-size: 13px;
+    line-height: 104.4%;
+    color: $default;
+  }
+  }
+  .btn-input{
+    &__register{
+      transition: all .3s;
+      &:hover{
+        color: $accent;
+      }
+    }
+    &__entry{
+      @extend %gilroy-500;
+      position: relative;
+      background-color: $basic;
+      border-radius: 34px;
+      padding: 8px 16px 8px 27px;
+      margin-left: 15px;
+      color: #fff;
+      transition: all .3s;
+      &::before{
+        content: '';
+        color: #000;
+        position: absolute;
+        width: 10px;
+        height: 9px;
+        background-image: url('../images/icon/arrow-right.svg');
+        top: 12px;
+        left: 13px;
+      }
+      &:hover{
+        background-color: $accent;
+      }
+    }
+  }
+
+
+@import 'media';

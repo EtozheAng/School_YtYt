@@ -1,0 +1,27 @@
+$default: #22253B;
+$basic: #38BFF2;
+$accent: #F15525;
+
+%gilroy-400{
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 400;
+}
+%gilroy-500{
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+}
+%gilroy-600{
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+}
+
+
+%btn{
+  background-color: $accent;
+  border-radius: 82px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 96.69%;
+  letter-spacing: -0.03em;
+  padding: 27px 72px 28px 40px;
+}
