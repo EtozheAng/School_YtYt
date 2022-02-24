@@ -20,3 +20,11 @@
     font-weight: 600;
     font-style: normal;
 }
+@font-face{
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-style: normal;
+  src: local('GilroyBold'), 
+  url('../fonts/GilroyBold.woff') format('woff');
+  font-display: swap;
+}

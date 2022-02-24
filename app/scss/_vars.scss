@@ -1,6 +1,7 @@
 $default: #22253B;
 $basic: #38BFF2;
 $accent: #F15525;
+$bg: #EAF2F5;
 
 %gilroy-400{
   font-family: 'Gilroy', sans-serif;
@@ -14,9 +15,15 @@ $accent: #F15525;
   font-family: 'Gilroy', sans-serif;
   font-weight: 600;
 }
+%gilroy-700{
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 700;
+}
 
 
 %btn{
+  position: relative;
+  transition: all .3s;
   background-color: $accent;
   border-radius: 82px;
   color: #fff;
@@ -24,4 +31,17 @@ $accent: #F15525;
   line-height: 96.69%;
   letter-spacing: -0.03em;
   padding: 27px 72px 28px 40px;
+  cursor: pointer;
+  &::after{
+      content: "";
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 45px;
+      top: 30px;
+      background-image: url('../images/icon/left.svg');
+    }
+    &:hover{
+        background-color: $basic;
+      }
 }
