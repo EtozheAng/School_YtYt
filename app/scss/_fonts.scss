@@ -14,11 +14,13 @@
   url('../fonts/GilroyMedium.woff') format('woff');
   font-display: swap;
 }
-@font-face {
-    font-family: 'Gilroy';
-    src: local('Gilroy'); 
-    font-weight: 600;
-    font-style: normal;
+@font-face{
+  font-family: 'Gilroy';
+  font-weight: 600;
+  font-style: normal;
+  src: local('Gilroy-SemiBold'), 
+  url('../fonts/Gilroy-SemiBold.woff2') format('woff2');
+  font-display: swap;
 }
 @font-face{
   font-family: 'Gilroy';
