@@ -24,6 +24,7 @@ $bg: #EAF2F5;
 %btn{
   position: relative;
   transition: all .3s;
+  border: none;
   text-align: center;
   background-color: $accent;
   border-radius: 82px;
@@ -32,6 +33,7 @@ $bg: #EAF2F5;
   line-height: 96.69%;
   letter-spacing: -0.03em;
   padding: 27px 72px 28px 40px;
+  z-index: 0;
   cursor: pointer;
   &::after{
       content: "";

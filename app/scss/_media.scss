@@ -1,0 +1,676 @@
+@media (max-width: 1200px){
+  .header{
+    &__content{
+      padding: 70px 0 60px;
+    }
+    &__picture{
+      position: unset;
+    }
+    &__content-box{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+    &__content-title{
+      max-width: 100%;
+    }
+    &__content-text{
+      max-width: 100%;
+    }
+    &__content-btn{
+      display: inline-block;
+      margin: 0 auto;
+      margin-bottom: 63px;
+    }
+  }
+  .price-table {
+    overflow-x: scroll;
+    margin-right: -15px;
+    border-radius: 30px 0 0 30px;
+  }
+  .table{
+	min-width: 1080px;
+  }
+  .price-info{
+    flex-direction: column;
+    &__img{
+      margin-bottom: 21px;
+    }
+    &__text{
+      text-align: center;
+      margin-bottom: 17px;
+    }
+  }
+  .footer-top__item--position {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1100px){
+  .education-items{
+    grid-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .education-item{
+    &:nth-child(2),
+    &:nth-child(3){
+    grid-column: span 1;
+    padding: 40px 40px;
+    }
+  }
+}
+@media (max-width: 1000px){
+  .info-content{
+    &__img{
+      max-width: 350px;
+      margin-right: 30px;
+      margin-left: 10px;
+    }
+  }
+  .education-info{
+    padding: 36px 0px;
+    &__item{
+      padding: 0 20px;
+    }
+    &__item-number{
+      font-size: 70px;
+    }
+    &__item-title{
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 16px;
+    }
+    &__item-text{
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .education{
+    &__content{
+      background-position: center 10%;
+    }
+  }
+}
+@media (max-width: 900px){
+  .gilroy-500{
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+}
+  .logo{
+    margin-right: 0;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    overflow-y: hidden;
+    display: none;
+    &__closet{
+      position: absolute;
+      top: 100px;
+      right: 60px;
+      cursor: pointer;
+      z-index: 10;
+    }
+    &__list{
+      position: absolute;
+      top: 120px;
+      right: 5%;
+      z-index: 5;
+      flex-direction: column;
+      display: flex;
+      width: 256px;
+      height: 576px;
+      background-color: aquamarine;
+      padding: 53px 18px 34px 31px;
+      border-radius: 20px;
+      transform: translateX(200%);
+      transition: all .2s;
+    }
+    &__list--active{
+       transform: translateX(0);
+       transition: all .2s;
+    }
+    &__wisible{
+      display: block;
+    }
+    &__list-item{
+      margin-bottom: 25px;
+    }
+    &__list-link{
+      @extend .gilroy-500;
+      font-size: 20px;
+      line-height: 100%;
+    }
+    &__list-item--active{
+      display: flex;
+    }
+    &__list-item + .menu__list-item{
+      padding-left: 0;
+    }
+    &__btn{
+      display: flex;
+      border: none;
+      background-color: transparent;
+      align-items: center;
+    }
+  }
+  .btn-input{
+    &__register{
+      display: none;
+    }
+  }
+  .info-content{
+    &__img{
+      max-width: 300px;
+      margin-right: 17px;
+    }
+  }
+  .info-inner{
+    &__box{
+      padding: 35px;
+      &:last-child{
+        max-width: 100%;
+        padding: 25px 40px;
+        display: flex;
+        margin-bottom: 0;
+        text-align: left;
+        img{
+          margin-right: 19px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .education-entry{
+    margin: 0 auto 30px;
+  }
+  .education-item{
+    min-width: 100%;
+    &:nth-child(2),
+    &:nth-child(3){
+      padding: 40px 30px;
+    }
+    &__title{
+      font-size: 26px;
+      line-height: 24px;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+    .education-support{
+      padding: 50px 0;
+  }
+  .price{
+    padding: 60px 0 55px;
+    &__items{
+    flex-direction: column;
+    align-items: center;
+    }
+  }
+  .price__title {
+    margin-bottom: 30px;
+  }
+  .price-item{
+    text-align: center;
+    margin-bottom: 25px;
+    padding-left: 0;
+    margin-right: 0;
+    padding-top: 70px;
+    &__text{
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &::before{
+      left: 50%;
+      transform: translate(-50%);
+      top: 0;
+    }
+  }
+  .table{
+    font-size: 18px;
+  }
+  .table__total {
+    font-size: 22px;
+  }
+  .price__footnote{
+    font-size: 14px;
+    line-height: 23px;
+  }
+  .price-info{
+    &__text{
+      font-size: 15px;
+    }
+  }
+}
+@media (max-width: 835px){
+  .info-content{
+    &__img{
+     display: none;
+    }
+    &__items{
+      padding: 48px 0 56px;
+    }
+    &__item-text{
+        text-align: center;
+    }
+  }
+  .title{
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .education{
+    &__text{
+      font-size: 14px;
+    }
+    &__video{
+      min-height: 410px;
+    }
+  }
+  .footer-top{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 0;
+    &__text{
+      margin-left: 18px;
+      text-align: left;
+    }
+    &__item{
+      margin-bottom: 43px;
+      align-items: center;
+      &:last-child{
+        margin-bottom: 32px;
+      }
+    }
+    &__name{
+      margin-bottom: 25px;
+    }
+    &__social-list{
+      justify-content: center;
+    }
+    &__address{
+      margin-top: 35px;
+    }
+  }
+  .footer-bottom{
+    flex-direction: column;
+    padding-bottom: 23px;
+    &__eula{
+      margin-left: 0;
+      margin-top: 13px;
+      margin-bottom: 6px;
+    }
+    &__privacy{
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 700px){
+  .header{
+    &__content{
+      padding: 45px 0 30px;
+    }
+    &__content-title{
+      font-size: 36px;
+      line-height: 36px;
+      span{
+        font-size: 45px;
+      }
+    }
+    &__content-text{
+      margin-bottom: 35px;
+    }
+  }
+  .info-inner{
+    gap: 15px;
+  }
+  .title{
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .education{
+    &__text{
+      margin-bottom: 30px;
+    }
+    &__video{
+      min-height: 340px;
+    }
+    &__video-play{
+      max-width: 80px;
+    }
+    &__video-text{
+      font-size: 16px;
+    }
+  }
+  .education-support{
+    border-radius: 30px;
+    padding: 25px 0;
+  }
+  .education-info{
+    &__item-number{
+      font-size: 60px;
+    }
+    &__item-title{
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 16px;
+    }
+    &__item-text{
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .education-items{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .education-item{
+    &:nth-child(3){
+      order: 1;
+    }
+  }
+}
+
+@media(max-width: 600px){
+  .title {
+    font-size: 31px;
+    line-height: 31px;
+  }
+  .info{
+    &__title{
+      margin-bottom: 25px;
+    }
+  }
+  .header{
+    &__picture{
+      max-width: 300px;
+    }
+  }
+  .info-content{
+    &__items{
+      justify-content: center;
+      padding: 17px;
+    }
+    &__item{
+      font-size: 14px;
+    }
+  }
+  .info-inner{
+    &__title{
+      margin-bottom: 34px;
+    }
+    &__box{
+      max-width: 195px;
+      padding: 24px 18px 21px;
+      &:last-child{
+        max-width: 400px;
+        padding: 19px 40px;
+        display: flex;
+        margin-bottom: 0;
+        text-align: left;
+        img{
+          margin-right: 19px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__box-img{
+      width: 50px;
+      margin-bottom: 12px;
+    }
+    &__box-title{
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 14px;
+    }
+    &__box-text{
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+  .education__content{
+    background-position: center 15%;
+  }
+  .education{
+    &__video{
+      min-height: 240px;
+    }
+    &__video-play{
+      max-width: 80px;
+    }
+    &__video-text{
+      font-size: 16px;
+    }
+  }
+  .education-info{
+    padding: 36px 20px;
+    flex-direction: column;
+    &__item{
+      border-bottom: 1px solid #EAF2F5;
+      border-right: 0;
+      padding: 0 0 20px;
+      margin-bottom: 25px;
+      &:last-child{
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;  
+      }
+    }
+    &__item-number{
+      font-size: 50px;
+      line-height: 30px;
+      padding-top: 0;
+    }
+    &__item-title{
+      font-size: 20px;
+      line-height: 19px;
+      margin-bottom: 14px;
+    }
+    &__item-text{
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+  .education-entry{
+    flex-direction: column;
+    border-radius: 30px;
+    text-align: center;
+    padding: 11px 20px;
+    &__btn{
+      margin-bottom: 12px;
+      margin-right: 0;
+    }
+    &__text{
+      max-width: 100%;
+    }
+  }
+
+}
+@media (max-width: 500px){
+  .info-content{
+    &__items{
+      padding: 17px;
+      justify-content: space-between;
+    }
+    &__item{
+      padding: 0;
+      margin-right: 0;
+      width: 100%;
+      &:nth-child(2){
+        width: 34%;
+      }
+      &:nth-child(3){
+        width: 62%;
+      }
+      &:nth-child(6),
+      &:nth-child(7){
+        width: 48%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .education-item{
+    &__img{
+      width: 205px;
+    }
+  }
+  .education-support{
+    padding: 11px 0;
+  }
+}
+@media (max-width: 450px){
+  .header{
+     &__picture{
+      max-width: 210px;
+    }
+    &__content{
+      padding: 24px 0 26px
+    }
+    &__content-title{
+      font-size: 24px;
+      line-height: 24px;
+      span{
+        font-size: 35px;
+      }
+    }
+    &__content-text{
+      margin-bottom: 25px;
+      font-size: 12px;
+    }
+    &__content-btn{
+      font-size: 18px;
+    }
+  }
+  .info-content{
+    margin-bottom: 58px;
+    &__item-text{
+      display: none;  
+    }
+  }
+  .title{
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .info{
+    padding-bottom: 12px;
+    &__title{
+      margin: 0 auto 22px;
+      max-width: 209px;
+      font-size: 24px;
+      line-height: 26px;
+    }
+  }
+  .info-inner{
+    gap: 10px;
+    &__title{
+      margin-bottom: 24px;
+    }
+    &__box{
+      max-width: 140px;
+      padding: 24px 12px 20px 7px;
+      &:last-child{
+        max-width: 290px;
+        padding: 24px 42px;
+        display: flex;
+        margin-bottom: 0;
+        text-align: left;
+        img{
+          margin-right: 19px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    &__box-img{
+      width: 40px;
+      margin-bottom: 9px;
+    }
+    &__box-title{
+      max-width: 100%;
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+    &__box-text{
+      font-size: 9px;
+      line-height: 12px;
+    }
+  }
+  .education{
+    &__text{
+      font-size: 12px;
+      line-height: 17px;
+    }
+    &__video{
+      min-height: 170px;
+    }
+    &__video-play{
+      max-width: 58px;
+    }
+    &__video-text{
+      font-size: 10px;
+    }
+  }
+  .education-item{
+    &:nth-child(2),
+    &:nth-child(3){
+      padding: 30px 35px 30px 20px;
+    }
+    &__text {
+    font-size: 12px;
+    line-height: 17px;
+    }
+    &__title{
+      font-size: 20px;
+      line-height: 19px;
+    }
+  }
+  .education-entry{
+    &__btn{
+      font-size: 16px;
+    }
+    &__text{
+      font-size: 13px;
+      line-height: 18px;
+      margin-bottom: 11px;
+    }
+  }
+  .price-item{
+    &__text{
+      font-size: 12px;
+      line-height: 19px;
+    }
+  }
+  .price-table{
+    padding: 20px 20px 25px 20px;
+  }
+  .table{
+    font-size: 13px;
+  }
+  .table__total {
+    font-size: 19px;
+  }
+  .price__footnote {
+    display: block;
+    max-width: 200px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .price-info{
+    &__text{
+      font-size: 13px;
+    }
+  }
+  .price-info{
+    margin-top: 47px;
+    &__link{
+      font-size: 15px;
+    }
+  }
+}

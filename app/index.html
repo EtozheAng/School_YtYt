@@ -17,6 +17,13 @@
               <img class="logo__img" src="images/logo.svg" alt="">
             </a>
             <nav class="menu">
+              <div class="menu__closet">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC" />
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)"
+                    fill="#BCBCBC" />
+                </svg>
+              </div>
               <ul class="menu__list">
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#">Чему вы научитесь</a>
@@ -30,6 +37,9 @@
                 <li class="menu__list-item">
                   <a class="menu__list-link" href="#">Контакты</a>
                 </li>
+                <li class="menu__list-item menu__list-item--active">
+                  <a class="menu__list-link" href="#">Регистрация</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -37,18 +47,234 @@
             <a class="btn-input__register" href="#">Регистрация</a>
             <a class="btn-input__entry" href="#">Войти</a>
           </div>
+              <button class="menu__btn">
+                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="17" height="2" rx="1" fill="#F15525"/>
+                <rect y="6" width="17" height="2" rx="1" fill="#F15525"/>
+                <rect y="12" width="17" height="2" rx="1" fill="#F15525"/>
+                </svg>
+              </button>
+            
         </div>
         <div class="header__content">
           <div class="header__content-box">
             <h1 class="header__content-title">
-              Школа <span>{</span>
-              <strong>программирования</strong>
-              <span>}</span>для тех, кому нужны реальные навыки,<br>
+              Школа <strong><span>{</span>программирования<span>}</span></strong>
+              для тех, кому нужны реальные навыки,<br>
               а не просто сертификат
             </h1>
             <p class="header__content-text">Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам</p>
-            <a class="header__content-btn" href="#">Пройти тестирование</a>
-          </div>
+            <a class="header__content-btn  test-open" href="#">Пройти тестирование</a>
+      
+            <div class="test">
+              <div class="test__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                <p class="test__text">Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ – выбирайте пункт «Не знаю».
+                </p>
+                <div class="test__button">
+                 <a class="test__btn" href="#">Начать тест</a>
+               </div>
+              </div>
+            </div>
+            <div class="test-after">
+              <div class="test-after__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                <p class="test-after__title">Перед тем, как приступить к обучению, необходимо пройти небольшой тест</p>
+                <p class="test-after__text">Тест состоит из 4 заданий на логическое мышление и прочие навыки, необходимые программисту. Задания не самые простые. Но ни в коем случае не выбирайте ответы наугад. Если вы не можете дать правильный ответ – выбирайте пункт «Не знаю».
+                </p>
+                <div class="test-after__button">
+                 <a class="test__btn" href="#">Начать тест</a>
+               </div>
+              </div>
+            </div>
+
+            <div id="one" class="test-next">
+              <div class="test-next__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                <div class="test-next__numb">ЗАДАНИЕ №1</div>
+                <p class="test-next__text">Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+                </p>
+                <form class="test-next__form" action="#">
+                  <div class="test-next__box">
+                    <label class="test-next__radio">
+                      <input type="radio" name="radio" value="1">
+                      <span class="test-next__checkbox"></span>
+                      <span>Да, сумма явно неверная </span>
+                    </label>
+                    <label class="test-next__radio">
+                     <input type="radio" name="radio" value="2">
+                     <span class="test-next__checkbox"></span>
+                     <span>Нет, такая сумма вполне могла получиться</span>
+                    </label>
+                   <label class="test-next__radio">
+                    <input type="radio" name="radio" value="3">
+                    <span class="test-next__checkbox"></span>
+                    <span>Не знаю, не получается решить</span>
+                   </label>
+                  </div>
+                  <a class="test-next__btn">Ответить</a>
+                </form>
+              </div>
+            </div>
+
+            <div id="two" class="test-next">
+              <div class="test-next__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                <div class="test-next__numb">ЗАДАНИЕ №2</div>
+                <p class="test-next__text">Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+                </p>
+                <form class="test-next__form" action="#">
+                  <div class="test-next__box">
+                    <label class="test-next__radio">
+                      <input type="radio" name="radio" value="2">
+                      <span class="test-next__checkbox"></span>
+                      <span>Да, сумма явно неверная </span>
+                    </label>
+                    <label class="test-next__radio">
+                     <input type="radio" name="radio" value="1">
+                     <span class="test-next__checkbox"></span>
+                     <span>Нет, такая сумма вполне могла получиться</span>
+                    </label>
+                   <label class="test-next__radio">
+                    <input type="radio" name="radio" value="3">
+                    <span class="test-next__checkbox"></span>
+                    <span>Не знаю, не получается решить</span>
+                   </label>
+                  </div>
+                  <a class="test-next__btn">Ответить</a>
+                </form>
+              </div>
+            </div>
+
+            <div id="tree" class="test-next">
+              <div class="test-next__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                <div class="test-next__numb">ЗАДАНИЕ №3</div>
+                <p class="test-next__text">Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+                </p>
+                <form class="test-next__form" action="#">
+                  <div class="test-next__box">
+                    <label class="test-next__radio">
+                      <input type="radio" name="radio" value="2">
+                      <span class="test-next__checkbox"></span>
+                      <span>Да, сумма явно неверная </span>
+                    </label>
+                    <label class="test-next__radio">
+                     <input type="radio" name="radio" value="1">
+                     <span class="test-next__checkbox"></span>
+                     <span>Нет, такая сумма вполне могла получиться</span>
+                    </label>
+                   <label class="test-next__radio">
+                    <input type="radio" name="radio" value="3">
+                    <span class="test-next__checkbox"></span>
+                    <span>Не знаю, не получается решить</span>
+                   </label>
+                  </div>
+                  <a class="test-next__btn">Ответить</a>
+                </form>
+              </div>
+            </div>
+
+            <div id="four" class="test-next">
+              <div class="test-next__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                <div class="test-next__numb">ЗАДАНИЕ №4</div>
+                <p class="test-next__text">Иван Иванович купил в магазине у дома несколько пачек макарон по 40 рублей, несколько пачек печенья по 32 рубля и 2 пакета сока. Продавщица сказала, что с него 525 рублей (скидка не предусмотрена). Иван Иванович заявил, что его пытаются обсчитать. Действительно ли продавщица ошиблась в подсчетах?
+                </p>
+                <form class="test-next__form" action="#">
+                  <div class="test-next__box">
+                    <label class="test-next__radio">
+                      <input type="radio" name="radio" value="3">
+                      <span class="test-next__checkbox"></span>
+                      <span>Да, сумма явно неверная </span>
+                    </label>
+                    <label class="test-next__radio">
+                     <input type="radio" name="radio" value="2">
+                     <span class="test-next__checkbox"></span>
+                     <span>Нет, такая сумма вполне могла получиться</span>
+                    </label>
+                   <label class="test-next__radio">
+                    <input type="radio" name="radio" value="1">
+                    <span class="test-next__checkbox"></span>
+                    <span>Не знаю, не получается решить</span>
+                   </label>
+                  </div>
+                  <a class="test-next__btn">Ответить</a>
+                </form>
+              </div>
+            </div>
+
+            <div class="test-answer" id="block-1">
+              <div class="test-answer__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                  <div class="test-answer__numb">ЗАДАНИЕ №1</div>
+                    <p class="test-answer__title">Правильно! С логикой у вас все отлично</p>
+                    <p class="test-answer__text">Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана Ивановича.
+                    </p>
+                    <p class="test-answer__exp">В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</p>
+                    <button class="test-answer__btn ">Далее</button>
+                  </div>
+              </div>
+              
+            <div class="test-answer" id="block-2">
+              <div class="test-answer__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                  <div class="test-answer__numb">ЗАДАНИЕ №1</div>
+                  <p class="test-answer__title">Провал! С логикой у вас все отлично</p>
+                  <p class="test-answer__text">Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана Ивановича.
+                  </p>
+                  <p class="test-answer__exp">В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</p>
+                  <button class="test-answer__btn">Далее</button>
+                </div>
+              </div>
+            <div class="test-answer" id="block-3">
+              <div class="test-answer__popup">
+                <div class="test__closet">
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect y="13.6328" width="19.2797" height="1.37712" transform="rotate(-45 0 13.6328)" fill="#BCBCBC"/>
+                  <rect x="13.6328" y="14.6066" width="19.2797" height="1.37712" transform="rotate(-135 13.6328 14.6066)" fill="#BCBCBC"/></svg>
+                </div>
+                <div class="test-answer__numb">ЗАДАНИЕ №1</div>
+                <p class="test-answer__title">Провал! С логикой у вас все отлично</p>
+                <p class="test-answer__text">Так как 1 пачка макарон стоит 40 рублей, то любое количество пачек будет стоить четное число рублей. Аналогично с печеньем. А так как пакетов сока ровно 2, то за сок тоже нужно будет отдать четное число рублей. Получается, что ни при каких условиях в результате не может получиться нечетное число 525, а значит, продавщица действительно пыталась обсчитать Ивана Ивановича.
+                </p>
+                <p class="test-answer__exp">В этом задании проверялось ваше логическое мышление. Это критически важный навык для любого программиста.</p>
+                <button class="test-answer__btn">Далее</button>
+              </div>
+            </div>
+
           <div class="header__picture">
             <img class="header__picture-img" src="images/computer.svg" alt="">
           </div>
@@ -78,45 +304,74 @@
           <div class="info-inner">
             <div class="info-inner__box">
               <img class="info-inner__box-img" src="../images/icon/1.svg" alt="icon">
-              <p class="info-inner__box-title">Огромное количество практики</p>
-              <p class="info-inner__box-text">Более 500 самостоятельных заданий и 20 полноценных больших проектов</p>
+              <div class="info-inner__box-info">
+                <p class="info-inner__box-title">Огромное количество практики</p>
+                <p class="info-inner__box-text">Более 500 самостоятельных заданий и 20 полноценных больших проектов</p>
+
+              </div>
+
             </div>
             <div class="info-inner__box">
               <img class="info-inner__box-img" src="../images/icon/2.svg" alt="icon">
-              <p class="info-inner__box-title">Современные методики обучения</p>
-              <p class="info-inner__box-text">Спиральное обучение: погружаемся в материал постепенно, виток за витком</p>
+              <div class="info-inner__box-info">
+
+                <p class="info-inner__box-title">Современные методики обучения</p>
+                <p class="info-inner__box-text">Спиральное обучение: погружаемся в материал постепенно, виток за витком</p>
+              </div>
+
             </div>
             <div class="info-inner__box">
               <img class="info-inner__box-img" src="../images/icon/3.svg" alt="icon">
-              <p class="info-inner__box-title">Простое и понятное изложение</p>
-              <p class="info-inner__box-text">Вместо заумных терминов – примеры из реального мира</p>
+              <div class="info-inner__box-info">
+
+                <p class="info-inner__box-title">Простое и понятное изложение</p>
+                <p class="info-inner__box-text">Вместо заумных терминов – примеры из реального мира</p>
+              </div>
+
             </div>
             <div class="info-inner__box">
               <img class="info-inner__box-img" src="../images/icon/4.svg" alt="icon">
-              <p class="info-inner__box-title">Гибкий график занятий</p>
-              <p class="info-inner__box-text">Учитесь в любое время в удобном для вас темпе</p>
+              <div class="info-inner__box-info">
+
+                <p class="info-inner__box-title">Гибкий график занятий</p>
+                <p class="info-inner__box-text">Учитесь в любое время в удобном для вас темпе</p>
+              </div>
+
             </div>
             <div class="info-inner__box">
               <img class="info-inner__box-img" src="../images/icon/5.svg" alt="icon">
-              <p class="info-inner__box-title">Прямая связь с опытными программистами</p>
-              <p class="info-inner__box-text">Задавайте вопросы и отправляйте свой код на проверку</p>
+              <div class="info-inner__box-info">
+
+                <p class="info-inner__box-title">Прямая связь с опытными программистами</p>
+                <p class="info-inner__box-text">Задавайте вопросы и отправляйте свой код на проверку</p>
+              </div>
+
             </div>
             <div class="info-inner__box">
               <img class="info-inner__box-img" src="../images/icon/6.svg" alt="icon">
-              <p class="info-inner__box-title">Оплата небольшими частями</p>
-              <p class="info-inner__box-text">Платите только за тот материал, который сейчас изучаете, а не за весь курс сразу</p>
+              <div class="info-inner__box-info">
+
+                <p class="info-inner__box-title">Оплата небольшими частями</p>
+                <p class="info-inner__box-text">Платите только за тот материал, который сейчас изучаете, а не за весь курс сразу</p>
+              </div>
+
             </div>
             <div class="info-inner__box">
               <img class="info-inner__box-img" src="../images/icon/7.svg" alt="icon">
-              <p class="info-inner__box-title">Быстрый и легкий возврат</p>
-              <p class="info-inner__box-text">Если передумаете учиться – вернем деньги за 3 рабочих дня</p>
+              <div class="info-inner__box-info">
+
+                <p class="info-inner__box-title">Быстрый и легкий возврат</p>
+                <p class="info-inner__box-text">Если передумаете учиться – вернем деньги за 3 рабочих дня</p>
+              </div>
+
             </div>
           </div>
         </div>
       </section>
       <section class="education">
-        <div class="container">
+        
         <div class="education__content">
+          <div class="container">
           <h3 class="title education__title">Как происходит обучение на YtYt?</h3>
           <p class="education__text">Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.
           </p>
@@ -126,7 +381,7 @@
               <p class="education__video-text">Посмотреть видео</p>
             </a>
             </div>
-          </div>
+
           <div class="education-info">
             <div class="education-info__item">
               <p class="education-info__item-number">01</p>
@@ -145,9 +400,10 @@
             </div>
           </div>
           <div class="education-entry">
-            <a class="education-entry__btn" href="#">Начать обучение</a>
+            <a class="education-entry__btn open-test" href="#">Начать обучение</a>
             <p class="education-entry__text">Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</p>
           </div>
+        </div>
         </div>
 
         <div class="education-support">
@@ -241,7 +497,7 @@
         <div class="price-info">
           <img class="price-info__img" src="../images/icon/speaker.svg" alt="speaker">
           <p class="price-info__text">Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.</p>
-          <a class="price-info__link" href="#">Начать обучение</a>
+          <a class="price-info__link open-test" href="#">Начать обучение</a>
         </div>
       </div>
     </section>

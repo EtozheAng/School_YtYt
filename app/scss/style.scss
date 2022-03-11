@@ -13,6 +13,7 @@
   background-color: #F9F8FD;
   position: relative;
   padding-top: 10px;
+  z-index: 10;
 }
 .header{
   &__top{
@@ -42,6 +43,7 @@
     @extend %gilroy-500;
     span{
       color: $accent;
+      font-style: normal;
       font-size: 55px;
       font-weight: 500;
     }
@@ -63,20 +65,31 @@
     position: absolute;
     right: 8.7%;
     top: 3%;
+    z-index: -1;
   }
 }
 .logo{
   margin-right: 73px;
+  &__img{
+    width: 100%;
+  }
 }
 .menu{
   &__list{
     display: flex;
+  }
+  &__closet{
+    display: none;
+    transform: translateY(200%);
   }
   &__list-link{
     transition: all .3s;
     &:hover{
       color: $accent;
     }
+  }
+  &__list-item--active{
+    display: none;
   }
   &__list-item + .menu__list-item{
       padding-left: 40px;
@@ -85,6 +98,9 @@
     font-size: 13px;
     line-height: 104.4%;
     color: $default;
+  }
+  &__btn{
+    display: none;
   }
   }
   .btn-input{
@@ -120,8 +136,10 @@
   }
   .info{
     position: relative;
+    z-index: -1;
     padding: 103px 0 87px;
     background-color: #fff;
+    border-radius: 0 0 30px 30px;
     background: radial-gradient(circle closest-side at 50% 5px, rgba(0, 0, 0, 0) 45px, rgb(255, 255, 255) 46px);
     &__title{
       margin-bottom: 34px;
@@ -129,8 +147,10 @@
     &__bottom{
       cursor: pointer;
       position: absolute;
-      right: 48.6%;
-      bottom: 98%;
+      right: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      bottom: 97%;
       background-color: #fff;
       border-radius: 50%;
       width: 37px;
@@ -139,6 +159,165 @@
       background-repeat: no-repeat;
       background-position: center center;
   }
+  }
+  .test,
+  .test-after,
+  .test-next,
+  .test-answer{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 5;
+    display: none;
+    overflow-y: hidden;
+    &__popup{
+      position: absolute;
+      width: 740px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      padding: 85px 112px 130px 112px;
+      border-radius: 30px;
+      background-color: #fff;
+    }
+    &__title{
+      text-align: center;
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 22px;
+    }
+    &__closet{
+      position: absolute;
+      top: 25px;
+      right: 28px;
+      cursor: pointer;
+    }
+    &__btn{
+      @extend %btn;
+    }
+    &__button{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    &__text{
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+
+  .test-after{
+    &__popup{
+      padding: 55px 112px 41px 113px;
+      min-height: 345px;
+    }
+  }
+
+  .test-next,
+  .test-answer{
+    &__popup{
+      padding: 25px 28px 50px 34px;
+    }
+    &__numb{
+      border-radius: 49px;
+      background-color: #EAEAEA;
+      padding: 8px 21px 7px 23px;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 26px;
+      margin: 11px 0 22px;
+      max-width: 131px;
+    }
+    &__text{
+      text-align: left;
+      margin-bottom: 46px;
+    }
+    &__form{
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+    }
+    &__radio{
+      display: flex;
+      margin-left: 40px;
+      margin-bottom: 15px;
+      input{
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        position: absolute;
+      }
+      input:checked + .test-next__checkbox{
+        &::before{
+          content: '';
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          border-radius: 4px;
+          background-color: $accent;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%,-50%);
+        }
+      }
+    }
+    &__checkbox{
+      width: 22px;
+      height: 22px;
+      border-radius: 4px;
+      background-color: #EAEAEA;
+      position: absolute;
+      margin-left: -40px;
+    }
+    &__btn{
+      padding: 16px 41px 16px 22px;
+      font-size: 15px;
+      min-width: 132px;
+      @extend %gilroy-500;
+      &::after{
+        background-image: url('../images/icon/arrow-right-2.svg');
+        background-repeat: no-repeat;
+        top: 18px;
+        right: 20px;
+      }
+    }
+  }
+  .test-answer{
+    &__popup{
+      padding: 25px 28px 37px 34px;
+    }
+    &__numb{
+      margin-bottom: 30px;
+    }
+    &__title{
+      font-size: 24px;
+      line-height: 26px;
+      margin-bottom: 27px;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 25px;
+      max-width: 630px;
+    }
+    &__exp{
+      @extend %gilroy-500;
+      margin-bottom: 20px;
+      max-width: 630px;
+    }
+    &__btn{
+      float: right;
+    }
+  }
+
+  .no-scroll{
+    overflow-y: hidden;
   }
   .info-content{
     background-color: $bg;
@@ -246,16 +425,19 @@
       background-image: url('../images/icon/macbook.svg');
       background-repeat: no-repeat;
       background-position: center center;
+      background-size: contain;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 433px;  
+      min-height: 455px;
+      margin: 0 15px;
     }
     &__content{
       background-image: url('../images/icon/filter.svg');
       background-repeat: no-repeat;
-      background-position: top;
+      background-position: center 5%;
       padding-bottom: 30px;
+      background-size: 100%;
     }
     // &__video-filter{
     //   position: absolute;
@@ -285,11 +467,14 @@
     box-shadow: 0px 81px 120px -77px rgba(34, 37, 59, 0.04);
     display: flex;
     padding: 45px 0;
+    margin-top: 30px; 
     &__item{
         width: 100%;
         border-right: 1px solid $bg;
         padding: 0 52px;
-      
+      &:last-child{
+        border-right: none;
+      }
     }
     &__item-number{
       @extend %gilroy-700;
@@ -492,6 +677,7 @@
       max-width: 600px;
       font-size: 17px;
       line-height: 22px;
+      padding-right: 10px;
     }
     &__link{
       @extend %btn;
