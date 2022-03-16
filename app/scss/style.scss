@@ -17,6 +17,12 @@
 }
 .header{
   &__top{
+    position: fixed;
+    right: 0;
+    left: 0;
+    max-width: 1160px;
+    z-index: 10;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,13 +32,16 @@
     backdrop-filter: blur(15px);
     padding: 10px 11px 10px 21px;
   }
+  &__top--off-blur{
+    backdrop-filter: none;
+  }
   &__top-item{
     display: flex;
   }
   &__content{
     display: flex;
     justify-content: space-between;
-    padding: 70px 0 100px;
+    padding: 121px 0 100px;
   }
   &__content-title{
     max-width: 648px;
@@ -104,6 +113,9 @@
   }
   }
   .btn-input{
+    &__entry--active{
+        display: none;
+      }
     &__register{
       transition: all .3s;
       &:hover{
@@ -126,13 +138,17 @@
         width: 10px;
         height: 9px;
         background-image: url('../images/icon/arrow-right.svg');
-        top: 12px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 50%;
+        transform: translateY(-50%);
         left: 13px;
       }
       &:hover{
         background-color: $accent;
       }
     }
+    
   }
   .info{
     position: relative;
@@ -374,6 +390,11 @@
       margin-top: 25px;
     }
   }
+  .element-show{
+    transform: translateY(0%);
+    transition: all 1.5s;
+    opacity: 1;
+  }
   .info-inner{
     display: flex;
     flex-wrap: wrap;
@@ -578,10 +599,13 @@
       width: 61px;
       height: 61px;
       left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
     }
     &--site{
       &::before{
         background-image: url("../images/icon/site.svg");
+        background-size: cover;
       }
     }
     &--price{
@@ -596,11 +620,15 @@
         background-image: url("../images/icon/card.svg");
         width: 48px;
         height: 56px;
+        background-size: cover;
       }
     }
     &:last-child{
       margin-right: 0;
     }
+  }
+  .phone-arrows{
+    display: none;
   }
   .price-table{
   padding: 36px 40px;

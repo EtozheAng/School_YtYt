@@ -1,7 +1,10 @@
 @media (max-width: 1200px){
   .header{
+    &__top{
+      margin: 0 15px;
+    }
     &__content{
-      padding: 70px 0 60px;
+      padding: 101px 0 60px;
     }
     &__picture{
       position: unset;
@@ -46,6 +49,14 @@
     margin-left: 0;
     margin-right: 0;
   }
+  .phone-arrows{
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    &__phone{
+      margin-right: 6px;
+    }
+  }
 }
 @media (max-width: 1100px){
   .education-items{
@@ -58,6 +69,10 @@
     grid-column: span 1;
     padding: 40px 40px;
     }
+  }
+   .price-item{
+    margin-right: 35px;
+    padding-left: 83px;
   }
 }
 @media (max-width: 1000px){
@@ -112,21 +127,21 @@
     display: none;
     &__closet{
       position: absolute;
-      top: 100px;
-      right: 60px;
+      top: -13px;
+      right: 28px;
       cursor: pointer;
       z-index: 10;
     }
     &__list{
       position: absolute;
-      top: 120px;
-      right: 5%;
+      top: 14px;
+      right: 10px;
       z-index: 5;
       flex-direction: column;
       display: flex;
       width: 256px;
       height: 576px;
-      background-color: aquamarine;
+      background-color: #fff;
       padding: 53px 18px 34px 31px;
       border-radius: 20px;
       transform: translateX(200%);
@@ -161,6 +176,24 @@
     }
   }
   .btn-input{
+    &__entry{
+      margin-left: 0;
+    }
+    &__entry--active{
+      position: absolute;
+      top: 507px;
+      right: 108px;
+      z-index: 10;
+      padding: 15px 30px 13px 55px;
+      font-size: 15px;
+      margin-left: 0;
+      transition: all 0s;
+      &::before{
+        width: 14px;
+        height: 12px;
+        left: 30px;
+      }
+    }
     &__register{
       display: none;
     }
@@ -186,6 +219,9 @@
         }
       }
     }
+  }
+  .education{
+    padding: 70px 0 0;
   }
   .education-entry{
     margin: 0 auto 30px;
@@ -213,6 +249,7 @@
     &__items{
     flex-direction: column;
     align-items: center;
+    margin-bottom: 22px;
     }
   }
   .price__title {
@@ -224,6 +261,9 @@
     padding-left: 0;
     margin-right: 0;
     padding-top: 70px;
+    &:last-child{
+      margin-bottom: 0;
+    }
     &__text{
       font-size: 14px;
       line-height: 21px;
@@ -316,7 +356,7 @@
 @media (max-width: 700px){
   .header{
     &__content{
-      padding: 45px 0 30px;
+      padding: 86px 0 30px;
     }
     &__content-title{
       font-size: 36px;
@@ -527,11 +567,14 @@
 }
 @media (max-width: 450px){
   .header{
+    &__top{
+      padding: 6px 12px 6px 14px;
+    }
      &__picture{
       max-width: 210px;
     }
     &__content{
-      padding: 24px 0 26px
+      padding: 74px 0 26px
     }
     &__content-title{
       font-size: 24px;
@@ -567,6 +610,17 @@
       line-height: 26px;
     }
   }
+  .btn-input{
+    &__entry{
+      font-size: 10px;
+      padding: 8px 19px 8px 31px;
+    }
+  }
+  .logo{
+      width: 40px;
+      height: 14px;
+  }
+
   .info-inner{
     gap: 10px;
     &__title{
@@ -641,10 +695,30 @@
       margin-bottom: 11px;
     }
   }
+  .btn-input{
+    &__entry--active{
+      padding: 15px 30px 13px 55px;
+      font-size: 15px;
+    }
+  }
   .price-item{
+    max-width: 246px;
     &__text{
       font-size: 12px;
       line-height: 19px;
+    }
+  }
+  .price-item--site{
+    &::before{
+      width: 51px;
+      height: 51px;
+    }
+  }
+  .price-item--price{
+    &::before{
+      width: 55px;
+      height: 55px;
+      background-size: cover;
     }
   }
   .price-table{
