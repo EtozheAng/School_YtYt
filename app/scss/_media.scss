@@ -57,6 +57,9 @@
       margin-right: 6px;
     }
   }
+  .quiz{
+    padding: 45px 60px 40px 60px;
+  }
 }
 @media (max-width: 1100px){
   .education-items{
@@ -104,6 +107,17 @@
   .education{
     &__content{
       background-position: center 10%;
+    }
+  }
+  .quiz{
+    min-width: 550px;
+    &__title{
+      font-size: 23px;
+      line-height: 21px;
+    }
+    &__text{
+      font-size: 15px;
+      line-height: 20px;
     }
   }
 }
@@ -352,6 +366,23 @@
       margin-left: 0;
     }
   }
+  .quiz {
+    padding: 40px 30px 38px;
+    &__title{
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__btn {
+      max-width: 191px;
+      font-size: 16px;
+      padding: 19px 43px;
+      text-align: left;
+      &::after {
+        top: 20px;
+        right: 40px;
+      }
+    }
+  }
 }
 @media (max-width: 700px){
   .header{
@@ -417,7 +448,6 @@
     }
   }
 }
-
 @media(max-width: 600px){
   .title {
     font-size: 31px;
@@ -531,6 +561,22 @@
       max-width: 100%;
     }
   }
+  .quiz{
+    min-width: 400px;
+    &__title{
+      max-width: 300px;
+    }
+    &__box{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__numb {
+      margin: 4px auto 18px;
+    }
+     ul[class] {
+      margin-bottom: 20px;
+     }
+  }
 
 }
 @media (max-width: 500px){
@@ -566,6 +612,14 @@
   }
 }
 @media (max-width: 450px){
+    .gilroy-600 {
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 600;
+      }
+    .gilroy-400 {
+        font-family: 'Gilroy', sans-serif;
+        font-weight: 400;
+      }
   .header{
     &__top{
       padding: 6px 12px 6px 14px;
@@ -620,7 +674,6 @@
       width: 40px;
       height: 14px;
   }
-
   .info-inner{
     gap: 10px;
     &__title{
@@ -726,9 +779,9 @@
   }
   .table{
     font-size: 13px;
-  }
-  .table__total {
-    font-size: 19px;
+    &__total {
+        font-size: 19px;
+      }
   }
   .price__footnote {
     display: block;
@@ -745,6 +798,59 @@
     margin-top: 47px;
     &__link{
       font-size: 15px;
+    }
+  }
+  .quiz {
+    min-width: 300px;
+    padding: 45px 18px 38px;
+    &__title {
+      @extend .gilroy-600;
+      max-width: 213px;
+      font-size: 16px;
+      line-height: 21px;
+      margin-bottom: 13px;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 17px;
+      text-align: center;
+    }
+    &__numb{
+      margin: 4px auto 18px;
+      @extend .gilroy-600;
+    }
+    &__numbresult{
+      margin-bottom: 28px;
+    }
+    &__titleresult{
+      @extend .gilroy-400;
+      font-size: 16px;
+      line-height: 22px;
+    }
+    &__answertitle{
+      @extend .gilroy-600;
+      text-align: center;
+      margin-bottom: 19px;
+    }
+    &__subtitle{
+      text-align: center;
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 35px;
+    }
+    &__btn{
+      max-width: 191px;
+      font-size: 14px;
+      padding: 19px 43px;
+      text-align: left;
+      &::after{
+        top: 20px;
+        right: 47px;
+      }
+    }
+    &__list{
+      font-size: 12px;
+      line-height: 12px;
     }
   }
 }

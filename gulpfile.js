@@ -34,7 +34,8 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-    'app/js/main.js'
+    'app/js/main.js',
+    'app/js/quiz.js'
   ])
   .pipe(concat('main.min.js'))
   .pipe(uglify())
@@ -58,7 +59,7 @@ function images(){
   .pipe(dest('dist/images'))
 }
 
-function build() {
+function building() {
   return src([
     'app/**/*.html',
     'app/css/style.min.css',
@@ -84,6 +85,6 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.cleanDist = cleanDist;
-exports.build = series(cleanDist, images, build);
+exports.build = series(cleanDist, images, building);
 
 exports.default = parallel(styles, scripts, browsersync, watching);
