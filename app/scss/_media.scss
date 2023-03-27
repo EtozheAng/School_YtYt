@@ -1,3 +1,16 @@
+@media (min-width: 1440px){
+  .background{
+    background: url(../images/newBg.jpg), url(../images/icon/bg-2.svg);
+    background-position: top;
+    background-size: auto, cover;
+    background-repeat: no-repeat;
+  }
+  .header{
+    &__picture{
+      display: none;
+    }
+  }
+}
 @media (max-width: 1200px){
   .header{
     &__top{
