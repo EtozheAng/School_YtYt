@@ -1525,10 +1525,6 @@ a {
   .header__picture {
     display: none;
   }
-
-  .btn-input__entry {
-    display: none;
-  }
 }
 @media (max-width: 1200px) {
   .header__top {
