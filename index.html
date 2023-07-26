@@ -9,16 +9,98 @@
   </head>
 
   <body>
-    <div class="background">
-      <header class="header">
-        <div class="container">
-          <div class="header__top">
-            <div class="header__top-item">
-              <a class="logo" href="#">
-                <img class="logo__img" src="images/logo.svg" alt="" />
-              </a>
-              <nav class="menu">
-                <div class="menu__closet">
+    <!-- <div class="background"> -->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__top-item">
+            <a class="logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="" />
+            </a>
+            <nav class="menu">
+              <div class="menu__closet">
+                <svg
+                  width="15"
+                  height="15"
+                  viewBox="0 0 15 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    y="13.6328"
+                    width="19.2797"
+                    height="1.37712"
+                    transform="rotate(-45 0 13.6328)"
+                    fill="#BCBCBC"
+                  />
+                  <rect
+                    x="13.6328"
+                    y="14.6066"
+                    width="19.2797"
+                    height="1.37712"
+                    transform="rotate(-135 13.6328 14.6066)"
+                    fill="#BCBCBC"
+                  />
+                </svg>
+              </div>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#info">Чему вы научитесь</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#education"
+                    >Процесс обучения</a
+                  >
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#price">Стоимость</a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="#footer">Контакты</a>
+                </li>
+                <li class="menu__list-item menu__list-item--active">
+                  <a class="menu__list-link" href="#">Регистрация</a>
+                </li>
+              </ul>
+              <a class="btn-input__entry btn-input__entry--active" href="#"
+                >Войти</a
+              >
+            </nav>
+          </div>
+          <div class="btn-input">
+            <a class="btn-input__register" href="#">Регистрация</a>
+            <a class="btn-input__entry" href="#">Войти</a>
+          </div>
+          <button class="menu__btn">
+            <svg
+              width="17"
+              height="14"
+              viewBox="0 0 17 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="17" height="2" rx="1" fill="#F15525" />
+              <rect y="6" width="17" height="2" rx="1" fill="#F15525" />
+              <rect y="12" width="17" height="2" rx="1" fill="#F15525" />
+            </svg>
+          </button>
+        </div>
+        <div class="header__content">
+          <div class="header__content-box">
+            <h1 class="header__content-title">
+              Школа
+              <strong><span>{</span>программирования<span>}</span></strong>
+              для тех, кому нужны реальные навыки,<br />
+              а не просто сертификат
+            </h1>
+            <p class="header__content-text">
+              Пройдите тестирование, чтобы получить доступ к бесплатным вводным
+              урокам
+            </p>
+            <a class="header__content-btn opentest">Пройти тестирование</a>
+            <div class="test">
+              <div class="quiz">
+                <div class="quiz__close">
                   <svg
                     width="15"
                     height="15"
@@ -43,380 +125,284 @@
                     />
                   </svg>
                 </div>
-                <ul class="menu__list">
-                  <li class="menu__list-item">
-                    <a class="menu__list-link" href="#info"
-                      >Чему вы научитесь</a
-                    >
-                  </li>
-                  <li class="menu__list-item">
-                    <a class="menu__list-link" href="#education"
-                      >Процесс обучения</a
-                    >
-                  </li>
-                  <li class="menu__list-item">
-                    <a class="menu__list-link" href="#price">Стоимость</a>
-                  </li>
-                  <li class="menu__list-item">
-                    <a class="menu__list-link" href="#footer">Контакты</a>
-                  </li>
-                  <li class="menu__list-item menu__list-item--active">
-                    <a class="menu__list-link" href="#">Регистрация</a>
-                  </li>
-                </ul>
-                <a class="btn-input__entry btn-input__entry--active" href="#"
-                  >Войти</a
-                >
-              </nav>
-            </div>
-            <div class="btn-input">
-              <a class="btn-input__register" href="#">Регистрация</a>
-              <a class="btn-input__entry" href="#">Войти</a>
-            </div>
-            <button class="menu__btn">
-              <svg
-                width="17"
-                height="14"
-                viewBox="0 0 17 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="17" height="2" rx="1" fill="#F15525" />
-                <rect y="6" width="17" height="2" rx="1" fill="#F15525" />
-                <rect y="12" width="17" height="2" rx="1" fill="#F15525" />
-              </svg>
-            </button>
-          </div>
-          <div class="header__content">
-            <div class="header__content-box">
-              <h1 class="header__content-title">
-                Школа
-                <strong><span>{</span>программирования<span>}</span></strong>
-                для тех, кому нужны реальные навыки,<br />
-                а не просто сертификат
-              </h1>
-              <p class="header__content-text">
-                Пройдите тестирование, чтобы получить доступ к бесплатным
-                вводным урокам
-              </p>
-              <a class="header__content-btn opentest" href="#"
-                >Пройти тестирование</a
-              >
-              <div class="test">
-                <div class="quiz">
-                  <div class="quiz__close">
-                    <svg
-                      width="15"
-                      height="15"
-                      viewBox="0 0 15 15"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <rect
-                        y="13.6328"
-                        width="19.2797"
-                        height="1.37712"
-                        transform="rotate(-45 0 13.6328)"
-                        fill="#BCBCBC"
-                      />
-                      <rect
-                        x="13.6328"
-                        y="14.6066"
-                        width="19.2797"
-                        height="1.37712"
-                        transform="rotate(-135 13.6328 14.6066)"
-                        fill="#BCBCBC"
-                      />
-                    </svg>
-                  </div>
-                  <div class="quiz-header">
-                    <p class="quiz__title">
-                      Перед тем, как приступить к обучению, необходимо пройти
-                      небольшой тест
-                    </p>
-                    <p class="quiz__text">
-                      Тест состоит из 4 заданий на логическое мышление и прочие
-                      навыки, необходимые программисту. Задания не самые
-                      простые. Но ни в коем случае не выбирайте ответы наугад.
-                      Если вы не можете дать правильный ответ – выбирайте пункт
-                      «Не знаю».
-                    </p>
-                  </div>
-                  <div class="quiz__box">
-                    <ul class="quiz__list"></ul>
-                    <a class="quiz__btn-new" href="#"></a>
-                  </div>
-                  <a class="quiz__btn" href="#">Начать тест</a>
+                <div class="quiz-header">
+                  <p class="quiz__title">
+                    Перед тем, как приступить к обучению, необходимо пройти
+                    небольшой тест
+                  </p>
+                  <p class="quiz__text">
+                    Тест состоит из 4 заданий на логическое мышление и прочие
+                    навыки, необходимые программисту. Задания не самые простые.
+                    Но ни в коем случае не выбирайте ответы наугад. Если вы не
+                    можете дать правильный ответ – выбирайте пункт «Не знаю».
+                  </p>
                 </div>
-              </div>
-              <div class="header__picture">
-                <img
-                  class="header__picture-img"
-                  src="images/computer.svg"
-                  alt=""
-                />
+                <div class="quiz__box">
+                  <ul class="quiz__list"></ul>
+                  <a class="quiz__btn-new" href="#"></a>
+                </div>
+                <a class="quiz__btn" href="#">Начать тест</a>
               </div>
             </div>
           </div>
+          <img
+            class="header__content-img"
+            src="./images/header/Computer.svg"
+            alt=""
+          />
         </div>
-      </header>
-      <section class="info" id="info">
-        <div class="container">
-          <div class="info__bottom">
-            <a class="info__bottom-down" href="#"></a>
-          </div>
-          <h3 class="title info__title">Какие технологии вы изучите:</h3>
-          <div class="info-content">
-            <img class="info-content__img" src="images/content.svg" alt="" />
-            <div class="info-content__items">
-              <div class="info-content__item info-content__item--blue">
-                Язык программирования Python
-              </div>
-              <div class="info-content__item info-content__item--orange">
-                Сети
-              </div>
-              <div class="info-content__item info-content__item--red">
-                Базы данных
-              </div>
-              <div class="info-content__item info-content__item--green">
-                Фреймворки Flask и Django
-              </div>
-              <div class="info-content__item info-content__item--lite-blue">
-                Отладка и тестирование
-              </div>
-              <div class="info-content__item info-content__item--dark-blue">
-                Docker
-              </div>
-              <div class="info-content__item info-content__item--dark-purple">
-                Git
-              </div>
-              <p class="info-content__item-text">
-                Это необходимый минимум для современного backend-разработчика
-              </p>
-            </div>
-          </div>
-          <h3 class="title info-inner__title">
-            Обучение в YtYt – это удобно и результативно
-          </h3>
-          <div class="info-inner">
-            <div class="info-inner__box">
-              <img
-                class="info-inner__box-img"
-                src="images/icon/1.svg"
-                alt="icon"
-              />
-              <div class="info-inner__box-info">
-                <p class="info-inner__box-title">
-                  Огромное количество практики
-                </p>
-                <p class="info-inner__box-text">
-                  Более 500 самостоятельных заданий и 20 полноценных больших
-                  проектов
-                </p>
-              </div>
-            </div>
-            <div class="info-inner__box">
-              <img
-                class="info-inner__box-img"
-                src="images/icon/2.svg"
-                alt="icon"
-              />
-              <div class="info-inner__box-info">
-                <p class="info-inner__box-title">
-                  Современные методики обучения
-                </p>
-                <p class="info-inner__box-text">
-                  Спиральное обучение: погружаемся в материал постепенно, виток
-                  за витком
-                </p>
-              </div>
-            </div>
-            <div class="info-inner__box">
-              <img
-                class="info-inner__box-img"
-                src="images/icon/3.svg"
-                alt="icon"
-              />
-              <div class="info-inner__box-info">
-                <p class="info-inner__box-title">
-                  Простое и понятное изложение
-                </p>
-                <p class="info-inner__box-text">
-                  Вместо заумных терминов – примеры из реального мира
-                </p>
-              </div>
-            </div>
-            <div class="info-inner__box">
-              <img
-                class="info-inner__box-img"
-                src="images/icon/4.svg"
-                alt="icon"
-              />
-              <div class="info-inner__box-info">
-                <p class="info-inner__box-title">Гибкий график занятий</p>
-                <p class="info-inner__box-text">
-                  Учитесь в любое время в удобном для вас темпе
-                </p>
-              </div>
-            </div>
-            <div class="info-inner__box">
-              <img
-                class="info-inner__box-img"
-                src="images/icon/5.svg"
-                alt="icon"
-              />
-              <div class="info-inner__box-info">
-                <p class="info-inner__box-title">
-                  Прямая связь с опытными программистами
-                </p>
-                <p class="info-inner__box-text">
-                  Задавайте вопросы и отправляйте свой код на проверку
-                </p>
-              </div>
-            </div>
-            <div class="info-inner__box">
-              <img
-                class="info-inner__box-img"
-                src="images/icon/6.svg"
-                alt="icon"
-              />
-              <div class="info-inner__box-info">
-                <p class="info-inner__box-title">Оплата небольшими частями</p>
-                <p class="info-inner__box-text">
-                  Платите только за тот материал, который сейчас изучаете, а не
-                  за весь курс сразу
-                </p>
-              </div>
-            </div>
-            <div class="info-inner__box">
-              <img
-                class="info-inner__box-img"
-                src="images/icon/7.svg"
-                alt="icon"
-              />
-              <div class="info-inner__box-info">
-                <p class="info-inner__box-title">Быстрый и легкий возврат</p>
-                <p class="info-inner__box-text">
-                  Если передумаете учиться – вернем деньги за 3 рабочих дня
-                </p>
-              </div>
-            </div>
-          </div>
+      </div>
+    </header>
+    <section class="info" id="info">
+      <div class="container">
+        <div class="info__bottom">
+          <a class="info__bottom-down" href="#"></a>
         </div>
-      </section>
-      <section class="education" id="education">
-        <div class="education__content">
-          <div class="container">
-            <h3 class="title education__title">
-              Как происходит обучение на YtYt?
-            </h3>
-            <p class="education__text">
-              Обучение должно быть комфортным. Поэтому мы разработали
-              собственную платформу для обучения программированию. На ней вы
-              можете не только изучать теорию, но и запускать готовые примеры и
-              даже писать свой собственный код.
+        <h3 class="title info__title">Какие технологии вы изучите:</h3>
+        <div class="info-content">
+          <img class="info-content__img" src="images/content.svg" alt="" />
+          <div class="info-content__items">
+            <div class="info-content__item info-content__item--blue">
+              Язык программирования Python
+            </div>
+            <div class="info-content__item info-content__item--orange">
+              Сети
+            </div>
+            <div class="info-content__item info-content__item--red">
+              Базы данных
+            </div>
+            <div class="info-content__item info-content__item--green">
+              Фреймворки Flask и Django
+            </div>
+            <div class="info-content__item info-content__item--lite-blue">
+              Отладка и тестирование
+            </div>
+            <div class="info-content__item info-content__item--dark-blue">
+              Docker
+            </div>
+            <div class="info-content__item info-content__item--dark-purple">
+              Git
+            </div>
+            <p class="info-content__item-text">
+              Это необходимый минимум для современного backend-разработчика
             </p>
-            <div class="education__video">
-              <a
-                class="education__video-link"
-                href="https://www.youtube.com/watch?v=hvL1339luv0"
-              >
-                <img
-                  class="education__video-play"
-                  src="images/icon/play.svg"
-                  alt=""
-                />
-                <p class="education__video-text">Посмотреть видео</p>
-              </a>
+          </div>
+        </div>
+        <h3 class="title info-inner__title">
+          Обучение в YtYt – это удобно и результативно
+        </h3>
+        <div class="info-inner">
+          <div class="info-inner__box">
+            <img
+              class="info-inner__box-img"
+              src="images/icon/1.svg"
+              alt="icon"
+            />
+            <div class="info-inner__box-info">
+              <p class="info-inner__box-title">Огромное количество практики</p>
+              <p class="info-inner__box-text">
+                Более 500 самостоятельных заданий и 20 полноценных больших
+                проектов
+              </p>
             </div>
-            <div class="education-info">
-              <div class="education-info__item">
-                <p class="education-info__item-number">01</p>
-                <p class="education-info__item-title">
-                  Весь материал разбит на небольшие уроки
-                </p>
-                <p class="education-info__item-text">
-                  Теория и практика подаются маленькими порциями. Так <br />
-                  вам будет легче усваивать<br />
-                  новые знания.
-                </p>
-              </div>
-              <div class="education-info__item">
-                <p class="education-info__item-number">02</p>
-                <p class="education-info__item-title">
-                  Обучение<br />через практику
-                </p>
-                <p class="education-info__item-text">
-                  Всё, что вы узнали, вы тут же начинаете применять на практике.
-                  Вы сразу видите результаты своего труда.
-                </p>
-              </div>
-              <div class="education-info__item">
-                <p class="education-info__item-number">03</p>
-                <p class="education-info__item-title">
-                  Нет ограничений<br />
-                  по времени
-                </p>
-                <p class="education-info__item-text">
-                  Можно совмещать учёбу с работой и другими делами. Не нужно
-                  выпрашивать академический отпуск, если пришлось сделать
-                  перерыв.
-                </p>
-              </div>
+          </div>
+          <div class="info-inner__box">
+            <img
+              class="info-inner__box-img"
+              src="images/icon/2.svg"
+              alt="icon"
+            />
+            <div class="info-inner__box-info">
+              <p class="info-inner__box-title">Современные методики обучения</p>
+              <p class="info-inner__box-text">
+                Спиральное обучение: погружаемся в материал постепенно, виток за
+                витком
+              </p>
             </div>
-            <div class="education-entry">
-              <a class="education-entry__btn opentest">Начать обучение</a>
-              <p class="education-entry__text">
-                Попробуйте, первые уроки бесплатны, но нужно пройти тестирование
+          </div>
+          <div class="info-inner__box">
+            <img
+              class="info-inner__box-img"
+              src="images/icon/3.svg"
+              alt="icon"
+            />
+            <div class="info-inner__box-info">
+              <p class="info-inner__box-title">Простое и понятное изложение</p>
+              <p class="info-inner__box-text">
+                Вместо заумных терминов – примеры из реального мира
+              </p>
+            </div>
+          </div>
+          <div class="info-inner__box">
+            <img
+              class="info-inner__box-img"
+              src="images/icon/4.svg"
+              alt="icon"
+            />
+            <div class="info-inner__box-info">
+              <p class="info-inner__box-title">Гибкий график занятий</p>
+              <p class="info-inner__box-text">
+                Учитесь в любое время в удобном для вас темпе
+              </p>
+            </div>
+          </div>
+          <div class="info-inner__box">
+            <img
+              class="info-inner__box-img"
+              src="images/icon/5.svg"
+              alt="icon"
+            />
+            <div class="info-inner__box-info">
+              <p class="info-inner__box-title">
+                Прямая связь с опытными программистами
+              </p>
+              <p class="info-inner__box-text">
+                Задавайте вопросы и отправляйте свой код на проверку
+              </p>
+            </div>
+          </div>
+          <div class="info-inner__box">
+            <img
+              class="info-inner__box-img"
+              src="images/icon/6.svg"
+              alt="icon"
+            />
+            <div class="info-inner__box-info">
+              <p class="info-inner__box-title">Оплата небольшими частями</p>
+              <p class="info-inner__box-text">
+                Платите только за тот материал, который сейчас изучаете, а не за
+                весь курс сразу
+              </p>
+            </div>
+          </div>
+          <div class="info-inner__box">
+            <img
+              class="info-inner__box-img"
+              src="images/icon/7.svg"
+              alt="icon"
+            />
+            <div class="info-inner__box-info">
+              <p class="info-inner__box-title">Быстрый и легкий возврат</p>
+              <p class="info-inner__box-text">
+                Если передумаете учиться – вернем деньги за 3 рабочих дня
               </p>
             </div>
           </div>
         </div>
-        <div class="education-support">
-          <div class="container">
-            <div class="education-items">
-              <div class="education-item">
-                <img
-                  class="education-item__img"
-                  src="images/icon/help&supp.svg"
-                  alt=""
-                />
-              </div>
-              <div class="education-item">
-                <p class="education-item__title">Помощь и поддержка</p>
-                <p class="education-item__text">
-                  Если в процессе обучения возникнут сложности, вы всегда
-                  сможете задать вопрос своему наставнику.
-                </p>
-                <p class="education-item__text">
-                  Раз в несколько уроков вы будете получать большое задание,
-                  которое нужно будет сдавать на проверку код-ревьюеру. Он
-                  внимательно изучит ваш код, найдет ошибки и поможет вам стать
-                  лучше.
-                </p>
-              </div>
-              <div class="education-item">
-                <p class="education-item__title">Методика обучения</p>
-                <p class="education-item__text">
-                  Весь учебный материал структурирован по принципу «спирального
-                  обучения». Сначала вы получаете базовые знания, а затем на
-                  каждом витке спирали углубляетесь в изученные темы, доводя их
-                  понимание до совершенства. Такой подход упрощает обучение и
-                  гарантирует, что вы не пропустите ничего важного.
-                </p>
-              </div>
-              <div class="education-item">
-                <img
-                  class="education-item__img"
-                  src="images/icon/metod.svg"
-                  alt=""
-                />
-              </div>
+      </div>
+    </section>
+    <section class="education" id="education">
+      <div class="education__content">
+        <div class="container">
+          <h3 class="title education__title">
+            Как происходит обучение на YtYt?
+          </h3>
+          <p class="education__text">
+            Обучение должно быть комфортным. Поэтому мы разработали собственную
+            платформу для обучения программированию. На ней вы можете не только
+            изучать теорию, но и запускать готовые примеры и даже писать свой
+            собственный код.
+          </p>
+          <div class="education__video">
+            <a
+              class="education__video-link"
+              href="https://www.youtube.com/watch?v=hvL1339luv0"
+            >
+              <img
+                class="education__video-play"
+                src="images/icon/play.svg"
+                alt=""
+              />
+              <p class="education__video-text">Посмотреть видео</p>
+            </a>
+          </div>
+          <div class="education-info">
+            <div class="education-info__item">
+              <p class="education-info__item-number">01</p>
+              <p class="education-info__item-title">
+                Весь материал разбит на небольшие уроки
+              </p>
+              <p class="education-info__item-text">
+                Теория и практика подаются маленькими порциями. Так <br />
+                вам будет легче усваивать<br />
+                новые знания.
+              </p>
+            </div>
+            <div class="education-info__item">
+              <p class="education-info__item-number">02</p>
+              <p class="education-info__item-title">
+                Обучение<br />через практику
+              </p>
+              <p class="education-info__item-text">
+                Всё, что вы узнали, вы тут же начинаете применять на практике.
+                Вы сразу видите результаты своего труда.
+              </p>
+            </div>
+            <div class="education-info__item">
+              <p class="education-info__item-number">03</p>
+              <p class="education-info__item-title">
+                Нет ограничений<br />
+                по времени
+              </p>
+              <p class="education-info__item-text">
+                Можно совмещать учёбу с работой и другими делами. Не нужно
+                выпрашивать академический отпуск, если пришлось сделать перерыв.
+              </p>
+            </div>
+          </div>
+          <div class="education-entry">
+            <a class="education-entry__btn opentest">Начать обучение</a>
+            <p class="education-entry__text">
+              Попробуйте, первые уроки бесплатны, но нужно пройти тестирование
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="education-support">
+        <div class="container">
+          <div class="education-items">
+            <div class="education-item">
+              <img
+                class="education-item__img"
+                src="images/icon/help&supp.svg"
+                alt=""
+              />
+            </div>
+            <div class="education-item">
+              <p class="education-item__title">Помощь и поддержка</p>
+              <p class="education-item__text">
+                Если в процессе обучения возникнут сложности, вы всегда сможете
+                задать вопрос своему наставнику.
+              </p>
+              <p class="education-item__text">
+                Раз в несколько уроков вы будете получать большое задание,
+                которое нужно будет сдавать на проверку код-ревьюеру. Он
+                внимательно изучит ваш код, найдет ошибки и поможет вам стать
+                лучше.
+              </p>
+            </div>
+            <div class="education-item">
+              <p class="education-item__title">Методика обучения</p>
+              <p class="education-item__text">
+                Весь учебный материал структурирован по принципу «спирального
+                обучения». Сначала вы получаете базовые знания, а затем на
+                каждом витке спирали углубляетесь в изученные темы, доводя их
+                понимание до совершенства. Такой подход упрощает обучение и
+                гарантирует, что вы не пропустите ничего важного.
+              </p>
+            </div>
+            <div class="education-item">
+              <img
+                class="education-item__img"
+                src="images/icon/metod.svg"
+                alt=""
+              />
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <!-- </div> -->
     <section class="price" id="price">
       <div class="container">
         <h3 class="title price__title">Стоимость обучения</h3>
