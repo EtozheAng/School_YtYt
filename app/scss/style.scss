@@ -4,17 +4,21 @@
 @import 'libs';
 @import 'global';
 
-.background {
-  background: url('../images/bg-2.svg'), url('../images/icon/bg-2.svg');
-  background-size: auto, cover;
-  background-repeat: no-repeat;
-  background-position: top right, center -250px;
-  background-color: #f9f8fd;
-  position: relative;
-  padding-top: 10px;
-  z-index: 10;
-}
+// .background {
+//   background: url('../images/bg-2.svg'), url('../images/icon/bg-2.svg');
+//   background-size: auto, cover;
+//   background-repeat: no-repeat;
+//   background-position: top right, center -250px;
+//   background-color: #f9f8fd;
+//   position: relative;
+//   padding-top: 10px;
+//   z-index: 10;
+// }
 .header {
+  // background-image: url('../images/header/circles.svg');
+  // background-repeat: no-repeat;
+  // background-position-x: center;
+
   &__top {
     position: fixed;
     right: 0;
@@ -68,6 +72,9 @@
   }
   &__content-btn {
     @extend %btn;
+  }
+  &__content-img {
+    width: fit-content;
   }
   &__picture {
     position: absolute;
@@ -688,7 +695,7 @@
   &__numb {
     border-radius: 49px;
     background-color: #eaeaea;
-    padding: 8px 21px 7px 23px;
+    padding: 8px 20px 7px 20px;
     text-transform: uppercase;
     font-size: 14px;
     line-height: 26px;
@@ -750,16 +757,7 @@
     padding: 25px 47px 26px 33px;
     margin: 0 auto;
     &::after {
-      content: '';
-      width: 16px;
-      height: 16px;
-      position: absolute;
-      top: 29px;
-      right: 30px;
-      background-image: url('../images/icon/left.svg');
-    }
-    &:hover {
-      background-color: $basic;
+      content: none;
     }
   }
   &__btn-new {

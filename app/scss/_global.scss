@@ -2,20 +2,21 @@ body {
   font-size: 16px;
   line-height: 23px;
   color: $default;
+  background: #f9f8fd;
   @extend %gilroy-400;
 }
-.container{
+.container {
   max-width: 1190px;
   padding: 0 15px;
   margin: 0 auto;
 }
-a{
+a {
   color: $default;
   font-size: 13px;
   line-height: 104.4%;
   @extend %gilroy-400;
 }
-.title{
+.title {
   @extend %gilroy-600;
   font-size: 46px;
   line-height: 46px;

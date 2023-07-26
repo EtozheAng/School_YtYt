@@ -1,29 +1,29 @@
-$default: #22253B;
-$basic: #38BFF2;
-$accent: #F15525;
-$bg: #EAF2F5;
+$default: #22253b;
+$basic: #38bff2;
+$accent: #f15525;
+$bg: #eaf2f5;
 
-%gilroy-400{
+%gilroy-400 {
   font-family: 'Gilroy', sans-serif;
   font-weight: 400;
 }
-%gilroy-500{
+%gilroy-500 {
   font-family: 'Gilroy', sans-serif;
   font-weight: 500;
 }
-%gilroy-600{
+%gilroy-600 {
   font-family: 'Gilroy', sans-serif;
   font-weight: 600;
 }
-%gilroy-700{
+%gilroy-700 {
   font-family: 'Gilroy', sans-serif;
   font-weight: 700;
 }
 
-
-%btn{
+%btn {
+  cursor: pointer;
   position: relative;
-  transition: all .3s;
+  transition: all 0.3s;
   border: none;
   text-align: center;
   background-color: $accent;
@@ -34,17 +34,16 @@ $bg: #EAF2F5;
   letter-spacing: -0.03em;
   padding: 27px 72px 28px 40px;
   z-index: 0;
-  cursor: pointer;
-  &::after{
-      content: "";
-      width: 16px;
-      height: 16px;
-      position: absolute;
-      right: 45px;
-      top: 30px;
-      background-image: url('../images/icon/left.svg');
-    }
-    &:hover{
-        background-color: $basic;
-      }
+  &:hover {
+    background-color: $basic;
+  }
+  &::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    background-image: url('../images/icon/left.svg');
+  }
 }
