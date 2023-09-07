@@ -38,3 +38,7 @@ $(function () {
     $('.menu').removeClass('menu__wisible')
   })
 })
+if (navigator.userAgent.match(/SamsungBrowser/)) {
+  var metaThemeColor = document.querySelector('meta[name=theme-color]')
+  metaThemeColor.setAttribute('content', '#ffffff')
+}

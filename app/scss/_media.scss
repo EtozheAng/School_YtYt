@@ -16,17 +16,15 @@
     &__top {
       margin: 0 15px;
     }
+    &__content-img {
+      display: none;
+    }
     &__content {
       padding: 101px 0 60px;
       flex-direction: column;
       align-items: center;
     }
-    // &__picture {
-    //   position: unset;
-    // }
     &__content-box {
-      display: flex;
-      flex-direction: column;
       text-align: center;
       align-items: center;
     }
@@ -37,9 +35,9 @@
       max-width: 100%;
     }
     &__content-btn {
-      display: inline-block;
       margin: 0 auto;
-      margin-bottom: 63px;
+      max-width: 100%;
+      display: inline-block;
     }
   }
   .price-table {
@@ -479,6 +477,7 @@
     }
     &__box-img {
       width: 50px;
+      height: 50px;
       margin-bottom: 12px;
     }
     &__box-title {
@@ -628,9 +627,6 @@
         font-size: 30px;
       }
     }
-    &__content-img {
-      display: none;
-    }
     &__content-text {
       padding: 0;
       margin-bottom: 25px;
@@ -638,7 +634,6 @@
     }
     &__content-btn {
       font-size: 18px;
-      margin-bottom: 20px;
     }
   }
   .info-content {
@@ -652,7 +647,7 @@
     line-height: 26px;
   }
   .info {
-    padding: 60px 0 20px;
+    padding: 25px 0;
   }
   .btn-input {
     &__entry {
@@ -675,6 +670,7 @@
     }
     &__box-img {
       width: 40px;
+      height: 40px;
       margin-bottom: 9px;
     }
     &__box-title {
@@ -734,23 +730,26 @@
     }
   }
   .price-item {
-    max-width: 246px;
+    max-width: 253px;
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+    text-align: justify;
     &__text {
       font-size: 12px;
       line-height: 19px;
     }
   }
-  .price-item--site {
+  .price-item--site,
+  .price-item--price,
+  .price-item--card {
     &::before {
-      width: 51px;
-      height: 51px;
-    }
-  }
-  .price-item--price {
-    &::before {
-      width: 55px;
-      height: 55px;
-      background-size: cover;
+      width: 41px;
+      height: 41px;
+      top: 0;
+      left: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
     }
   }
   .price-table {
@@ -763,23 +762,29 @@
       font-size: 19px;
     }
   }
-  .price__footnote {
-    margin: 0;
-    font-size: 12px;
+  .price {
+    &__footnote {
+      margin: 0;
+      font-size: 12px;
+    }
+    &__items {
+      gap: 25px;
+    }
   }
   .price-info {
+    padding: 20px 15px;
     &__link {
       min-width: 255px;
-
       font-size: 16px;
     }
     &__img {
       width: 55px;
       height: 55px;
+      margin-bottom: 4px;
     }
     &__text {
       text-align: justify;
-      font-size: 14px;
+      font-size: 12px;
     }
   }
   .quiz {
