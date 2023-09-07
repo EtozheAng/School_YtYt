@@ -654,6 +654,15 @@ a {
           justify-content: space-between;
   padding: 121px 0 100px;
 }
+.header__content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .header__content-title {
   max-width: 648px;
   font-size: 46px;
@@ -676,6 +685,9 @@ a {
   margin-bottom: 45px;
   max-width: 365px;
   border-top: 1px solid #dedede;
+}
+.header__content-btn {
+  max-width: 321px;
 }
 .header__content-img {
   width: -webkit-fit-content;
@@ -1085,7 +1097,7 @@ a {
 .price-item::before {
   position: absolute;
   content: "";
-  width: 61px;
+  width: 62px;
   height: 61px;
   left: 0px;
   top: 50%;
@@ -1518,6 +1530,9 @@ a {
   .header__top {
     margin: 0 15px;
   }
+  .header__content-img {
+    display: none;
+  }
   .header__content {
     padding: 101px 0 60px;
     -webkit-box-orient: vertical;
@@ -1529,13 +1544,6 @@ a {
             align-items: center;
   }
   .header__content-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1548,9 +1556,9 @@ a {
     max-width: 100%;
   }
   .header__content-btn {
-    display: inline-block;
     margin: 0 auto;
-    margin-bottom: 63px;
+    max-width: 100%;
+    display: inline-block;
   }
 
   .price-table {
@@ -2043,6 +2051,7 @@ a {
   }
   .info-inner__box-img {
     width: 50px;
+    height: 50px;
     margin-bottom: 12px;
   }
   .info-inner__box-title {
@@ -2206,9 +2215,6 @@ a {
   .header__content-title span {
     font-size: 30px;
   }
-  .header__content-img {
-    display: none;
-  }
   .header__content-text {
     padding: 0;
     margin-bottom: 25px;
@@ -2216,7 +2222,6 @@ a {
   }
   .header__content-btn {
     font-size: 18px;
-    margin-bottom: 20px;
   }
 
   .info-content {
@@ -2232,7 +2237,7 @@ a {
   }
 
   .info {
-    padding: 60px 0 20px;
+    padding: 25px 0;
   }
 
   .btn-input__entry {
@@ -2257,6 +2262,7 @@ a {
   }
   .info-inner__box-img {
     width: 40px;
+    height: 40px;
     margin-bottom: 9px;
   }
   .info-inner__box-title {
@@ -2311,22 +2317,26 @@ a {
   }
 
   .price-item {
-    max-width: 246px;
+    max-width: 253px;
+    padding: 0;
+    margin: 0;
+    padding-left: 30px;
+    text-align: justify;
   }
   .price-item__text {
     font-size: 12px;
     line-height: 19px;
   }
 
-  .price-item--site::before {
-    width: 51px;
-    height: 51px;
-  }
-
-  .price-item--price::before {
-    width: 55px;
-    height: 55px;
-    background-size: cover;
+  .price-item--site::before,
+.price-item--price::before,
+.price-item--card::before {
+    width: 41px;
+    height: 41px;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .price-table {
@@ -2345,7 +2355,13 @@ a {
     margin: 0;
     font-size: 12px;
   }
+  .price__items {
+    gap: 25px;
+  }
 
+  .price-info {
+    padding: 20px 15px;
+  }
   .price-info__link {
     min-width: 255px;
     font-size: 16px;
@@ -2353,10 +2369,11 @@ a {
   .price-info__img {
     width: 55px;
     height: 55px;
+    margin-bottom: 4px;
   }
   .price-info__text {
     text-align: justify;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .quiz {
